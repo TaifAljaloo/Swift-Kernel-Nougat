@@ -85,9 +85,25 @@ echo "****************************************************************"
 echo "****************************************************************"
 echo "****************************************************************"
 
-# remove some useless files
-cd /home/taif/Desktop/kernel/kernel/sw-tools/AIK-Linux
-
-sudo ./cleanup.sh
-
-	
+# packing boot.img
+echo "****************************************************************"
+echo "****************************************************************"
+echo "****************************************************************"
+echo "******************Packing boot.img***********************"
+echo "****************************************************************"
+echo "****************************************************************"
+echo "****************************************************************"
+sudo cp -rf $SW_DIR/sw-tools/ramdisks/ramdisk/. $SW_DIR/sw-tools/AIK-Linux/ramdisk
+sudo cp -rf $SW_DIR/sw-tools/ramdisks/split_img/. $SW_DIR/sw-tools/AIK-Linux/split_img
+sudo cp $SW_DIR/arch/arm64/boot/Image $SW_DIR/sw-tools/AIK-Linux/split_img/boot.img-zImage
+sudo cp $SW_DIR/swift/dtb.img $SW_DIR/sw-tools/AIK-Linux/split_img/boot.img-dtb
+$SW_DIR/sw-tools/AIK-Linux/repackimg.sh --nosudo
+sudo cp $SW_DIR/sw-tools/AIK-Linux/image-new.img $SW_DIR/swift/boot_A530F.img
+$SW_DIR/sw-tools/AIK-Linux/cleanup.sh --nosudo
+echo "****************************************************************"
+echo "****************************************************************"
+echo "****************************************************************"
+echo "******************packing boot.img is donne is done*************"
+echo "****************************************************************"
+echo "****************************************************************"
+echo "****************************************************************"
