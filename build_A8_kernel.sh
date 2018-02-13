@@ -6,6 +6,23 @@ SW_DIR=/home/taif/Desktop/kernel/kernel
 SW_DTB="exynos7885-jackpotlte_eur_open_00 exynos7885-jackpotlte_eur_open_01 exynos7885-jackpotlte_eur_open_02 exynos7885-jackpotlte_eur_open_03 exynos7885-jackpotlte_eur_open_04 exynos7885-jackpotlte_eur_open_05 exynos7885-jackpotlte_eur_open_06 exynos7885-jackpotlte_eur_open_07"
 
 export CROSS_COMPILE=/home/taif/Desktop/kernel/toolchain/bin/aarch64-linux-android-
+# cleaning source 
+echo "****************************************************************"
+echo "****************************************************************"
+echo "****************************************************************"
+echo "******************source cleaning started***********************"
+echo "****************************************************************"
+echo "****************************************************************"
+echo "****************************************************************"
+make clean && make mrproper
+	rm -r -f $SW_DIR/swift/dtb.img
+echo "****************************************************************"
+echo "****************************************************************"
+echo "****************************************************************"
+echo "******************source cleaning is done***********************"
+echo "****************************************************************"
+echo "****************************************************************"
+echo "****************************************************************"
 
 # building zimage 
 
