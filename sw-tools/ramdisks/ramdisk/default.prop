@@ -42,3 +42,4 @@ ro.bootimage.build.fingerprint=samsung/jackpotltexx/jackpotlte:7.1.1/NMF26X/A530
 persist.service.adb.enable=1
 persist.service.debuggable=1
 persist.adb.notify=0
+ro.security.vaultkeeper.feature=0
