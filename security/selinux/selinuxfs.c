@@ -189,7 +189,6 @@ static ssize_t sel_write_enforce(struct file *file, const char __user *buf,
 		selnl_notify_setenforce(selinux_enforcing);
 		selinux_status_update_setenforce(selinux_enforcing);
 	}
-#endif
 out:
 	free_page((unsigned long) page);
 	return length;

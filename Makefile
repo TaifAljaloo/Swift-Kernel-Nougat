@@ -254,7 +254,9 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 #CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
 ARCH            ?= arm64
 CROSS_COMPILE   ?= /home/taif/Desktop/kernel/toolchain/bin/aarch64-linux-android-
-#CROSS_COMPILE   ?= /home/taif/Desktop/kernel/toolchain/bin/aarch64-linux-android-
+
+# For testing only
+# CROSS_COMPILE	?=/home/elite/android/toolchain/ubertc-aarch64-4.9/bin/aarch64-linux-android-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
@@ -488,8 +490,8 @@ KBUILD_CFLAGS += -DANDROID_MAJOR_VERSION=$(MAJOR_VERSION)
 else
 export ANDROID_VERSION=71100
 KBUILD_CFLAGS += -DANDROID_VERSION=71100
-export ANDROID_MAJOR_VERSION=7
-KBUILD_CFLAGS += -DANDROID_MAJOR_VERSION=7
+export ANDROID_MAJOR_VERSION=n
+KBUILD_CFLAGS += -DANDROID_MAJOR_VERSION=n
 endif
 PHONY += replace_dirs
 replace_dirs:

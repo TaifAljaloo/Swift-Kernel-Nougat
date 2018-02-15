@@ -16,12 +16,27 @@
 # limitations under the License.
 #
 echo " ....building Swift kernel started ...."
-# Init Fields
-SW_DIR=/home/taif/Desktop/kernel/kernel
-SW_DTB="exynos7885-jackpotlte_eur_open_00 exynos7885-jackpotlte_eur_open_01 exynos7885-jackpotlte_eur_open_02 exynos7885-jackpotlte_eur_open_03 exynos7885-jackpotlte_eur_open_04 exynos7885-jackpotlte_eur_open_05 exynos7885-jackpotlte_eur_open_06 exynos7885-jackpotlte_eur_open_07"
 
-export CROSS_COMPILE=/home/taif/Desktop/kernel/toolchain/bin/aarch64-linux-android-
-# cleaning source 
+# For testing only
+# SW_TC=/home/elite/android/toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+
+# Init Fields
+SW_DIR=$(pwd)
+SW_DATE=$(date +%Y%m%d)
+SW_TC=/home/taif/Desktop/kernel/toolchain/bin/aarch64-linux-android-
+SW_JOBS=5
+SW_VERSION=v1.0
+
+# Device specific Fields
+SW_CONFG=exynos7885-jackpotlte_eur_defconfig
+SW_ARCH=arm64
+SW_VARIANT=A530F
+SW_DTB="exynos7885-jackpotlte_eur_open_00 exynos7885-jackpotlte_eur_open_01 exynos7885-jackpotlte_eur_open_02 exynos7885-jackpotlte_eur_open_03 exynos7885-jackpotlte_eur_open_04 exynos7885-jackpotlte_eur_open_05 exynos7885-jackpotlte_eur_open_06 exynos7885-jackpotlte_eur_open_07"
+SW_ANDROID=n
+
+
+# cleaning source
+export CROSS_COMPILE=$SW_TC
 echo "****************************************************************"
 echo "****************************************************************"
 echo "****************************************************************"
@@ -48,9 +63,11 @@ echo "******************buidling zimage started***********************"
 echo "****************************************************************"
 echo "****************************************************************"
 echo "****************************************************************"
-export ANDROID_MAJOR_VERSION=n
-make ARCH=arm64 exynos7885-jackpotlte_eur_defconfig
-make ARCH=arm64
+export ANDROID_MAJOR_VERSION=$SW_ANDROID
+export $SW_ARCH
+export LOCALVERSION=-Swift_Kernel-$SW_VERSION-$SW_VARIANT-$SW_DATE
+make  $SW_CONFG
+make -j$SW_JOBS
 echo "****************************************************************"
 echo "****************************************************************"
 echo "****************************************************************"
@@ -70,7 +87,7 @@ echo "****************************************************************"
 echo "****************************************************************"
 
 for dts in $SW_DTB; do
-	/home/taif/Desktop/kernel/toolchain/bin/aarch64-linux-android-cpp -nostdinc -undef -x assembler-with-cpp -I        $SW_DIR/include $SW_DIR/arch/arm64/boot/dts/exynos/${dts}.dts > ${dts}.dts
+	$SW_TC-cpp -nostdinc -undef -x assembler-with-cpp -I        $SW_DIR/include $SW_DIR/arch/arm64/boot/dts/exynos/${dts}.dts > ${dts}.dts
 	$SW_DIR/scripts/dtc/dtc -p 0 -i $SW_DIR/arch/arm64/boot/dts/exynos -O dtb -o ${dts}.dtb ${dts}.dts
 done
 $SW_DIR/tools/dtbtool/dtbtool -o $SW_DIR/swift/dtb.img
@@ -93,17 +110,17 @@ echo "******************Packing boot.img***********************"
 echo "****************************************************************"
 echo "****************************************************************"
 echo "****************************************************************"
-sudo cp -rf $SW_DIR/sw-tools/ramdisks/ramdisk/. $SW_DIR/sw-tools/AIK-Linux/ramdisk
-sudo cp -rf $SW_DIR/sw-tools/ramdisks/split_img/. $SW_DIR/sw-tools/AIK-Linux/split_img
-sudo cp $SW_DIR/arch/arm64/boot/Image $SW_DIR/sw-tools/AIK-Linux/split_img/boot.img-zImage
-sudo cp $SW_DIR/swift/dtb.img $SW_DIR/sw-tools/AIK-Linux/split_img/boot.img-dtb
+cp -rf $SW_DIR/sw-tools/ramdisks/ramdisk/. $SW_DIR/sw-tools/AIK-Linux/ramdisk
+cp -rf $SW_DIR/sw-tools/ramdisks/split_img/. $SW_DIR/sw-tools/AIK-Linux/split_img
+cp $SW_DIR/arch/arm64/boot/Image $SW_DIR/sw-tools/AIK-Linux/split_img/boot.img-zImage
+cp $SW_DIR/swift/dtb.img $SW_DIR/sw-tools/AIK-Linux/split_img/boot.img-dtb
 $SW_DIR/sw-tools/AIK-Linux/repackimg.sh --nosudo
-sudo cp $SW_DIR/sw-tools/AIK-Linux/image-new.img $SW_DIR/swift/boot_A530F.img
+cp $SW_DIR/sw-tools/AIK-Linux/image-new.img $SW_DIR/swift/boot_A530F.img
 $SW_DIR/sw-tools/AIK-Linux/cleanup.sh --nosudo
 echo "****************************************************************"
 echo "****************************************************************"
 echo "****************************************************************"
-echo "******************packing boot.img is donne is done*************"
+echo "******************packing boot.img is done**********************"
 echo "****************************************************************"
 echo "****************************************************************"
 echo "****************************************************************"
