@@ -22,4 +22,6 @@ scripts/mod/mk_elfconfig
 scripts/mod/modpost
 scripts/selinux/genheaders/genheaders
 scripts/selinux/mdp/mdp
+sw-tools/out/*
 swift/boot_A530F.img
+.config.old
