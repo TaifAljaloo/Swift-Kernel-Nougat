@@ -69,12 +69,7 @@
 #include <net/netns/generic.h>
 
 #include "audit.h"
-
-// [ SEC_SELINUX_PORTING_EXYNOS
-#ifdef CONFIG_SEC_AVC_LOG
 #include <linux/sec_debug.h>
-#endif
-// ] SEC_SELINUX_PORTING_EXYNOS
 
 /* No auditing will take place until audit_initialized == AUDIT_INITIALIZED.
  * (Initialization happens after skb_init is called.) */
