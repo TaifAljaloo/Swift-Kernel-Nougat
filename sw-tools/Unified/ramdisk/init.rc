@@ -1552,7 +1552,7 @@ service kap_disable /sbin/knox_changer -d
     disabled
     oneshot
 
-on property:security.knox_kap_mode=false
+on property:security.knox_kap_mode=true
     start kap_enable
 on property:security.knox_kap_mode=false
     start kap_disable
@@ -1787,3 +1787,17 @@ on property:service.vpnclientd.enable=0
 
 on property:sys.sf.restart=1
     restart surfaceflinger
+
+service adbd /sbin/adbd —root_seclabel=u:r:su:s0
+    disabled
+    socket adbd stream 660 system system
+    seclabel u:r:adbd:s0  
+  
+# allows adbd at boot with property trigger below
+on property:ro.debuggable=1
+    write /sys/class/android_usb/android0/enable 0
+    write /sys/class/android_usb/android0/idVendor 04E8
+    write /sys/class/android_usb/android0/idProduct 6860
+    write /sys/class/android_usb/android0/functions adb
+    write /sys/class/android_usb/android0/enable 1
+    start adbd
