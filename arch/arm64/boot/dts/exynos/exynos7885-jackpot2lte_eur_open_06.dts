@@ -1,11 +1,11 @@
-# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_06.dts"
+# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_06.dts"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_06.dts"
-# 12 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_06.dts"
+# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_06.dts"
+# 12 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_06.dts"
 /dts-v1/;
-# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi" 1
-# 12 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi"
+# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi" 1
+# 12 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi"
 # 1 "arch/arm64/boot/dts/exynos/exynos7885-rmem.dtsi" 1
 # 12 "arch/arm64/boot/dts/exynos/exynos7885-rmem.dtsi"
 /memreserve/ 0xE0000000 0xD00000;
@@ -89,7 +89,7 @@
   };
  };
 };
-# 13 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi" 2
+# 13 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi" 2
 # 1 "arch/arm64/boot/dts/exynos/exynos7885.dtsi" 1
 # 16 "arch/arm64/boot/dts/exynos/exynos7885.dtsi"
 # 1 "./arch/arm64/boot/dts/include/dt-bindings/soc/samsung/exynos7885.h" 1
@@ -4158,7 +4158,7 @@ samsung,tmu_sensor_type = <0x2>;
  };
 
 };
-# 14 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi" 2
+# 14 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi" 2
 # 1 "arch/arm64/boot/dts/exynos/exynos7885-display-lcd.dtsi" 1
 # 12 "arch/arm64/boot/dts/exynos/exynos7885-display-lcd.dtsi"
 / {
@@ -4334,7 +4334,7 @@ samsung,tmu_sensor_type = <0x2>;
   vt_compensation = <810>;
  };
 };
-# 15 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi" 2
+# 15 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi" 2
 # 1 "arch/arm64/boot/dts/exynos/modem-s327ap-sipc-pdata.dtsi" 1
 # 12 "arch/arm64/boot/dts/exynos/modem-s327ap-sipc-pdata.dtsi"
 / {
@@ -4721,9 +4721,9 @@ samsung,tmu_sensor_type = <0x2>;
   shmem,ipc_size = <0x800000>;
  };
 };
-# 16 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi" 2
-# 1 "arch/arm64/boot/dts/exynos/battery_data_jackpotlte_common.dtsi" 1
-# 21 "arch/arm64/boot/dts/exynos/battery_data_jackpotlte_common.dtsi"
+# 16 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi" 2
+# 1 "arch/arm64/boot/dts/exynos/battery_data_jackpot2lte_common.dtsi" 1
+# 21 "arch/arm64/boot/dts/exynos/battery_data_jackpot2lte_common.dtsi"
 / {
  pinctrl@11CB0000 {
   fuel_irq: fuel-irq {
@@ -4765,7 +4765,7 @@ samsung,tmu_sensor_type = <0x2>;
    fuelgauge,capacity_max_margin = <200>;
    fuelgauge,capacity_min = <0>;
    fuelgauge,capacity_calculation_type = <28>;
-   fuelgauge,capacity_full = <3000>;
+   fuelgauge,capacity_full = <3500>;
    fuelgauge,type_str = "SDI";
    fuelgauge,model_type = <1>;
    fuelgauge,fg_log_enable = <1>;
@@ -4785,192 +4785,193 @@ samsung,tmu_sensor_type = <0x2>;
     <
 
 
-    136 11 5 11 131 10 1 10 140 9
-    29 9 181 8 87 8 214 7 155 7
-    62 7 222 6 167 6 126 6 93 6
-    66 6 34 6 250 5 196 5 146 5
-    7 5 196 1 215 8 106 8 253 7
-    143 7 34 7 181 6 71 6 218 5
-    108 5 255 4 146 4 36 4 183 3
-    73 3 220 2 111 2 1 2 148 1
-    38 1 185 0 76 0 222 15
+    172 11 27 11 138 10 250 9 130 9
+    18 9 169 8 65 8 200 7 144 7
+    57 7 220 6 161 6 120 6 88 6
+    64 6 37 6 0 6 203 5 151 5
+    58 5 182 1 189 8 80 8 228 7
+    119 7 10 7 157 6 49 6 196 5
+    87 5 234 4 125 4 16 4 164 3
+    55 3 202 2 93 2 240 1 132 1
+    23 1 170 0 61 0 209 15
 
 
-    58 58 58 58 59 59 59 60 60 59
-    59 59 60 60 61 63 64 67 71 78
-    90 179
+    53 53 53 53 53 53 52 53 53 52
+    52 52 53 53 54 55 55 57 60 64
+    75 154
 
 
-    0x18 0x2E 0x86 0x0B
+    0x10 0x36 0x84 0x0D
 
-    0x7 0xD7
-
-
-    11052 10518 9984 9450 8916 8382 7848 7312 6778 6245
-    5711 5177 4643 4109 3575 3041 2507 1971 1438 903
-    370 (-164)
-
-    44414 43777 43139 42504 41935 41392 40884 40426 39797 39508
-    39052 38582 38315 38113 37953 37820 37665 37471 37207 36964
-    36286 32208
+    0x8 0x05
 
 
+    10924 10392 9862 9330 8799 8268 7737 7205 6674 6143
+    5612 5080 4549 4018 3487 2955 2424 1893 1361 830
+    299 (-231)
 
-    136 11 5 11 131 10 1 10 140 9
-    29 9 181 8 87 8 214 7 155 7
-    62 7 222 6 167 6 126 6 93 6
-    65 6 34 6 250 5 196 5 146 5
-    7 5 196 1 238 8 127 8 17 8
-    162 7 52 7 197 6 87 6 232 5
-    122 5 11 5 157 4 47 4 192 3
-    82 3 227 2 117 2 6 2 152 1
-    41 1 187 0 76 0 222 15
-
-
-    58 58 58 58 59 59 59 60 60 59
-    59 59 60 60 61 63 64 67 71 78
-    90 179
-
-
-    0x68 0x2E 0x9A 0x0B
-
-    0x7 0xD7
-
-
-    11160 10621 10082 9542 9003 8464 7924 7385 6846 6306
-    5767 5228 4688 4149 3609 3070 2531 1991 1452 913
-    373 (-166)
-
-    44414 43777 43139 42505 41935 41393 40884 40425 39797 39508
-    39053 38582 38315 38113 37953 37819 37665 37471 37207 36964
-    36285 32208
+    44589 43881 43172 42471 41887 41337 40824 40317 39729 39454
+    39029 38575 38284 38084 37931 37813 37680 37498 37243 36986
+    36533 32140
 
 
 
-    136 11 5 11 131 10 1 10 140 9
-    29 9 181 8 87 8 214 7 155 7
-    62 7 222 6 167 6 126 6 93 6
-    65 6 34 6 250 5 196 5 146 5
-    7 5 196 1 7 9 152 8 40 8
-    184 7 73 7 217 6 106 6 250 5
-    138 5 27 5 171 4 60 4 204 3
-    93 3 237 2 126 2 14 2 158 1
-    47 1 191 0 80 0 224 15
+    172 11 27 11 138 10 250 9 130 9
+    18 9 169 8 65 8 200 7 144 7
+    57 7 220 6 161 6 120 6 88 6
+    64 6 37 6 0 6 203 5 151 5
+    58 5 182 1 226 8 115 8 5 8
+    150 7 39 7 185 6 74 6 220 5
+    109 5 255 4 144 4 33 4 179 3
+    68 3 214 2 103 2 249 1 138 1
+    27 1 173 0 62 0 208 15
 
 
-    58 58 58 58 59 59 59 60 60 59
-    59 59 60 60 61 63 64 67 71 78
-    90 179
+    53 53 53 53 53 53 52 53 53 52
+    52 52 53 53 54 55 55 57 60 64
+    75 154
 
 
-    0xA0 0x2D 0x68 0x0B
+    0x18 0x33 0xC6 0x0C
 
-    0x7 0xD7
-
-
-    11285 10740 10195 9650 9106 8561 8016 7471 6926 6382
-    5837 5292 4747 4202 3658 3113 2567 2023 1477 934
-    388 (-156)
-
-    44414 43777 43139 42505 41936 41393 40884 40425 39797 39508
-    39053 38582 38315 38113 37953 37819 37665 37471 37207 36964
-    36285 32208
+    0x7 0xCA
 
 
-
-    136 11 5 11 131 10 1 10 140 9
-    29 9 181 8 87 8 214 7 155 7
-    62 7 222 6 167 6 126 6 93 6
-    66 6 34 6 250 5 196 5 146 5
-    8 5 196 1 61 9 203 8 89 8
-    231 7 116 7 2 7 144 6 29 6
-    171 5 57 5 198 4 84 4 226 3
-    111 3 253 2 139 2 25 2 166 1
-    52 1 194 0 79 0 221 15
+    11103 10563 10023 9483 8943 8403 7863 7322 6783 6243
+    5703 5163 4624 4084 3544 3004 2464 1923 1384 844
+    304 (-236)
 
 
-    58 58 58 58 59 59 59 60 60 59
-    59 59 60 60 61 63 64 67 71 78
-    90 179
-
-
-    0xD8 0x2C 0x36 0x0B
-
-    0x7 0xD7
-
-
-    11550 10992 10434 9876 9318 8759 8201 7643 7085 6526
-    5969 5411 4852 4294 3736 3178 2620 2062 1503 945
-    387 (-171)
-
-
-    44416 43777 43137 42505 41935 41393 40884 40425 39797 39508
-    39053 38582 38315 38113 37953 37820 37665 37471 37207 36964
-    36287 32208
+    44589 43881 43172 42471 41887 41338 40824 40317 39729 39454
+    39029 38575 38284 38084 37931 37813 37680 37498 37243 36986
+    36533 32140
 
 
 
-    136 11 5 11 131 10 1 10 140 9
-    29 9 181 8 87 8 214 7 155 7
-    62 7 222 6 167 6 126 6 93 6
-    65 6 34 6 250 5 196 5 146 5
-    7 5 196 1 174 9 54 9 190 8
-    71 8 207 7 87 7 223 6 104 6
-    240 5 120 5 0 5 137 4 17 4
-    153 3 33 3 170 2 50 2 186 1
-    66 1 203 0 83 0 219 15
+    172 11 27 11 138 10 250 9 130 9
+    18 9 169 8 65 8 200 7 144 7
+    57 7 220 6 161 6 120 6 88 6
+    64 6 37 6 0 6 203 5 150 5
+    58 5 182 1 4 9 148 8 36 8
+    179 7 67 7 211 6 99 6 242 5
+    130 5 18 5 162 4 49 4 193 3
+    81 3 225 2 112 2 0 2 144 1
+    32 1 175 0 63 0 207 15
 
 
-    58 58 58 58 59 59 59 60 60 59
-    59 59 60 60 61 63 64 67 71 78
-    90 179
+    53 53 53 53 53 53 52 53 53 52
+    52 52 53 53 54 55 55 57 60 64
+    75 154
 
 
-    0xD0 0x2A 0xB4 0x0A
+    0x64 0x32 0x99 0x0C
 
-    0x7 0xD7
-
-
-    12100 11515 10930 10345 9761 9176 8591 8006 7422 6837
-    6252 5667 5083 4498 3913 3328 2744 2159 1574 989
-    405 (-180)
+    0x7 0xCA
 
 
-    44414 43777 43139 42504 41935 41393 40884 40425 39797 39508
-    39052 38582 38315 38113 37953 37819 37665 37471 37207 36964
-    36285 32208
+    11270 10722 10174 9626 9078 8530 7982 7433 6885 6337
+    5789 5241 4693 4145 3597 3049 2500 1952 1404 856
+    308 (-240)
+
+    44589 43881 43173 42472 41887 41337 40824 40317 39729 39454
+    39029 38575 38284 38084 37931 37813 37680 37498 37243 36985
+    36532 32140
+
+
+
+    172 11 27 11 137 10 250 9 130 9
+    18 9 169 8 65 8 200 7 144 7
+    57 7 220 6 161 6 120 6 88 6
+    64 6 37 6 0 6 203 5 151 5
+    58 5 182 1 39 9 181 8 67 8
+    209 7 95 7 237 6 123 6 10 6
+    152 5 38 5 180 4 66 4 208 3
+    94 3 236 2 122 2 8 2 150 1
+    36 1 178 0 64 0 206 15
+
+
+    53 53 53 53 53 53 52 53 53 52
+    52 52 53 53 54 55 55 57 60 64
+    75 154
+
+
+    0xB0 0x31 0x6C 0x0C
+
+    0x7 0xCA
+
+
+    11440 10885 10329 9772 9216 8659 8103 7547 6990 6434
+    5877 5321 4765 4208 3652 3095 2539 1983 1426 869
+    313 (-243)
+
+
+    44591 43881 43171 42471 41886 41337 40824 40317 39729 39454
+    39029 38575 38284 38084 37931 37813 37680 37498 37243 36986
+    36533 32140
+
+
+
+    172 11 27 11 137 10 250 9 130 9
+    18 9 169 8 65 8 200 7 144 7
+    57 7 220 6 161 6 120 6 88 6
+    64 6 37 6 0 6 203 5 150 5
+    58 5 182 1 102 9 241 8 124 8
+    7 8 146 7 29 7 168 6 51 6
+    190 5 73 5 212 4 95 4 234 3
+    117 3 0 3 139 2 22 2 161 1
+    44 1 183 0 66 0 205 15
+
+
+    53 53 53 53 53 53 52 53 53 52
+    52 52 53 53 54 55 55 57 60 64
+    75 154
+
+
+    0xA8 0x2F 0xEA 0x0B
+
+    0x7 0xCA
+
+
+    11746 11175 10604 10032 9461 8890 8319 7747 7176 6605
+    6034 5463 4891 4320 3749 3177 2606 2034 1464 893
+    320 (-250)
+
+
+    44591 43881 43171 42471 41886 41337 40824 40317 39729 39453
+    39029 38575 38284 38084 37931 37813 37680 37498 37243 36985
+    36532 32140
     >;
 
    battery,battery_table3 = <
-      136 11 5 11 131 10 1 10 140 9
-      29 9 181 8 87 8 214 7 155 7
-      62 7 222 6 167 6 126 6 93 6
-      66 6 34 6 250 5 196 5 146 5
-      7 5 196 1 215 8 106 8 253 7
-      143 7 34 7 181 6 71 6 218 5
-      108 5 255 4 146 4 36 4 183 3
-      73 3 220 2 111 2 1 2 148 1
-      38 1 185 0 76 0 222 15
+      172 11 27 11 138 10 250 9 130 9
+      18 9 169 8 65 8 200 7 144 7
+      57 7 220 6 161 6 120 6 88 6
+      64 6 37 6 0 6 203 5 151 5
+      58 5 182 1 189 8 80 8 228 7
+      119 7 10 7 157 6 49 6 196 5
+      87 5 234 4 125 4 16 4 164 3
+      55 3 202 2 93 2 240 1 132 1
+      23 1 170 0 61 0 209 15
       >;
 
    battery,battery_table4 = <
-      58 58 58 58 59 59 59 60 60 59
-      59 59 60 60 61 63 64 67 71 78
-      90 179
+      53 53 53 53 53 53 52 53 53 52
+      52 52 53 53 54 55 55 57 60 64
+      75 154
       >;
 
-   battery,batcap = <0x18 0x2E 0x86 0x0B>;
-   battery,accum = <0x7 0xD7>;
+   battery,batcap = <0x10 0x36 0x84 0x0D>;
+   battery,accum = <0x8 0x05>;
 
    battery,soc_arr_val = <
-      11052 10518 9984 9450 8916 8382 7848 7312 6778 6245
-      5711 5177 4643 4109 3575 3041 2507 1971 1438 903
-      370 (-164)
+      10924 10392 9862 9330 8799 8268 7737 7205 6674 6143
+      5612 5080 4549 4018 3487 2955 2424 1893 1361 830
+      299 (-231)
       >;
    battery,ocv_arr_val = <
-      44414 43777 43139 42504 41935 41392 40884 40426 39797 39508
-      39052 38582 38315 38113 37953 37820 37665 37471 37207 36964
-      36286 32208
+      44589 43881 43172 42471 41887 41337 40824 40317 39729 39454
+      39029 38575 38284 38084 37931 37813 37680 37498 37243 36986
+      36533 32140
       >;
  };
 
@@ -5021,22 +5022,24 @@ samsung,tmu_sensor_type = <0x2>;
   battery,polling_time = <10 30 30 30 3600>;
 
   battery,temp_table_adc = <
-     236 308 397 462 542 635 690 738 789 867
-     1007 1178 1281 1357 1432 1551 1762 1983 2216 2460
-     2594 2683 2763 2898 3098 3264 3410 3508 3636
+     319 431 470 686 726 743 827 852 908 967
+     1035 1091 1157 1217 1400 1612 1824 2057 2301 2536
+     2755 2831 2959 3012 3102 3154 3176 3229 3284 3371
+     3440 3559 3676
      >;
   battery,temp_table_data = <
-     900 850 800 750 700 650 620 600 580 550
-     500 450 420 400 380 350 300 250 200 150
-     120 100 80 50 0 (-50) (-100) (-150) (-200)
+     900 800 750 650 620 600 580 570 550 530
+     510 490 470 450 400 350 300 250 200 150
+     100 80 50 30 10 0 (-10) (-30) (-50) (-70)
+     (-100) (-150) (-200)
      >;
 
   battery,inbat_voltage = <1>;
 
-  battery,inbat_voltage_table_adc = <2810 2793 2765 2737 2711 2683 2656 2631 2602 2573
-      2545 2515 2486 2459 2434 2408 2379 2353 2324 2294 2266>;
-  battery,inbat_voltage_table_data = <4380 4350 4300 4250 4200 4150 4100 4050 4000 3950
-      3900 3850 3800 3750 3700 3650 3600 3550 3500 3450 3400>;
+  battery,inbat_voltage_table_adc = <2823 2803 2775 2748 2719 2695 2668 2638 2609 2582
+      2551 2524 2496 2469 2442 2416 2390 2362 2333 2303 2275>;
+  battery,inbat_voltage_table_data = <4385 4355 4305 4255 4205 4155 4105 4055 4005 3955
+      3905 3855 3805 3755 3705 3655 3605 3555 3505 3455 3405>;
 
   battery,adc_check_count = <5>;
 
@@ -5142,12 +5145,12 @@ samsung,tmu_sensor_type = <0x2>;
   battery,swelling_low_temp_block_2nd = <50>;
   battery,swelling_low_temp_recov_2nd = <100>;
 
-  battery,swelling_low_temp_current = <700>;
-  battery,swelling_low_temp_topoff = <150>;
-  battery,swelling_high_temp_current = <1050>;
-  battery,swelling_high_temp_topoff = <150>;
-  battery,swelling_wc_high_temp_current = <700>;
-  battery,swelling_wc_low_temp_current = <700>;
+  battery,swelling_low_temp_current = <850>;
+  battery,swelling_low_temp_topoff = <175>;
+  battery,swelling_high_temp_current = <1250>;
+  battery,swelling_high_temp_topoff = <175>;
+  battery,swelling_wc_high_temp_current = <850>;
+  battery,swelling_wc_low_temp_current = <850>;
 
   battery,swelling_drop_float_voltage = <4150>;
   battery,swelling_high_rechg_voltage = <4000>;
@@ -5168,13 +5171,13 @@ samsung,tmu_sensor_type = <0x2>;
   battery,siop_hv_wireless_charging_limit_current = <700>;
   battery,siop_store_hv_wireless_input_limit_current = <450>;
 
-  battery,ttf_hv_charge_current = <2150>;
+  battery,ttf_hv_charge_current = <2500>;
   battery,ttf_hv_wireless_charge_current = <1050>;
   battery,ttf_wireless_charge_current = <900>;
 
   battery,pd_charging_charge_power = <15000>;
-  battery,max_charging_current = <2150>;
-  battery,battery_full_capacity = <3000>;
+  battery,max_charging_current = <2500>;
+  battery,battery_full_capacity = <3500>;
 
 
   battery,age_data = <0 4350 4280 4250 93
@@ -5191,8 +5194,8 @@ samsung,tmu_sensor_type = <0x2>;
 
   battery,enable_water_resistance;
 
-  battery,standard_curr = <2150>;
-  battery,expired_time = <10380>;
+  battery,standard_curr = <2500>;
+  battery,expired_time = <10200>;
   battery,recharging_expired_time = <5400>;
 
   battery,cisd_max_voltage_thr = <4400>;
@@ -5205,12 +5208,12 @@ samsung,tmu_sensor_type = <0x2>;
   io-channel-ranges;
 
  };
-# 537 "arch/arm64/boot/dts/exynos/battery_data_jackpotlte_common.dtsi"
+# 540 "arch/arm64/boot/dts/exynos/battery_data_jackpot2lte_common.dtsi"
  cable-info {
      default_input_current = <1800>;
      default_charging_current = <2100>;
-     full_check_current_1st = <300>;
-     full_check_current_2nd = <150>;
+     full_check_current_1st = <350>;
+     full_check_current_2nd = <175>;
 
      current_group_1 {
              cable_number = <1 4 19 21 22 23 30>;
@@ -5230,12 +5233,12 @@ samsung,tmu_sensor_type = <0x2>;
      current_group_4 {
              cable_number = <6 7 8>;
           input_current = <1650>;
-          charging_current = <2150>;
+          charging_current = <2500>;
     };
      current_group_5 {
              cable_number = <9>;
           input_current = <1650>;
-          charging_current = <2150>;
+          charging_current = <2500>;
     };
      current_group_6 {
              cable_number = <10 12 14 15 27>;
@@ -5274,9 +5277,9 @@ samsung,tmu_sensor_type = <0x2>;
   compatible = "samsung,s2mu004-charger";
  };
 };
-# 17 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi" 2
-# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_motor.dtsi" 1
-# 12 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_motor.dtsi"
+# 17 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi" 2
+# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_motor.dtsi" 1
+# 12 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_motor.dtsi"
 / {
  haptic {
   status = "okay";
@@ -5287,18 +5290,18 @@ samsung,tmu_sensor_type = <0x2>;
 
 
 
-
   haptic,freq = <0x39 0x69 0x41 0x19 0x27 0x19 0x19>;
-  haptic,duty = <0x25 0x25 0x25 0x25 0x25 0x7c 0x7c>;
+  haptic,duty = <0x45 0x45 0x45 0x45 0x45 0x7c 0x7c>;
 
 
   haptic,period = <4807692>;
   haptic,duty_rate = <2403846>;
   haptic,pwm_id = <0>;
-  haptic,alert_duty = <0x5C>;
+  haptic,alert_duty = <0x5b>;
  };
 };
-# 18 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi" 2
+# 18 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi" 2
+
 / {
  model = "Samsung Universal7885 board based on EXYNOS7885";
  compatible = "samsung,exynos7885", "samsung,Universal7885";
@@ -5324,7 +5327,12 @@ samsung,tmu_sensor_type = <0x2>;
 
  memory@880000000 {
   device_type = "memory";
-  reg = <0x00000008 0x80000000 0x40000000>;
+  reg = <0x00000008 0x80000000 0x0>;
+ };
+
+ memory@900000000 {
+  device_type = "memory";
+  reg = <0x00000009 0x00000000 0x0>;
  };
 
  chosen {
@@ -5362,13 +5370,6 @@ samsung,tmu_sensor_type = <0x2>;
 
  serial_1: uart@13810000 {
   status = "okay";
- };
-
- fm@14840000 {
-  num-volume-level = <16>;
-  val-vol-level = <0 11 16 23 32 45 64
-     90 128 181 256 362
-     512 724 1024 1400>;
  };
 
  pinctrl@11CB0000 {
@@ -5444,7 +5445,7 @@ samsung,tmu_sensor_type = <0x2>;
   mic-bias-ldo-voltage = <3>;
   use-btn-adc-mode;
   use-det-gdet-adc-mode = <1>;
-  jack-imp-tuning = <7>;
+  jack-imp-tuning = <9>;
   io-channels = <&exynos_adc 3>,<&exynos_adc 7>;
   io-channel-names = "adc-ear","adc-gdet";
   #io-channel-cells = <1>;
@@ -5733,12 +5734,14 @@ samsung,tmu_sensor_type = <0x2>;
   compatible = "samsung,sec-ap-thermistor";
   status = "okay";
 
-  adc_array = <235 308 378 395 467 568 603 648 698 764
-    908 1066 1170 1242 1327 1430 1633 1830 2061 2282
-    2409 2500 2584 2697 2880 3069 3213 3337 3447>;
-  temp_array = <900 850 800 750 700 650 620 600 580 550
-    500 450 420 400 380 350 300 250 200 150
-    120 100 80 50 0 (-50) (-100) (-150) (-200)>;
+  adc_array = <280 391 423 642 673 688 779 799 859 926
+   993 1040 1115 1178 1345 1552 1755 1976 2210 2396
+   2638 2717 2828 2894 2959 2992 3018 3076 3120 3205
+   3296 3412 3523>;
+  temp_array = <900 800 750 650 620 600 580 570 550 530
+   510 490 470 450 400 350 300 250 200 150
+   100 80 50 30 10 0 (-10) (-30) (-50) (-70)
+   (-100) (-150) (-200)>;
   io-channels = <&exynos_adc 0>;
   io-channel-names = "adc-ap-temp";
   io-channel-ranges;
@@ -5748,12 +5751,14 @@ samsung,tmu_sensor_type = <0x2>;
   compatible = "samsung,sec-wf-thermistor";
   status = "okay";
 
-  adc_array = <235 308 378 395 467 568 603 648 698 764
-    908 1066 1170 1242 1327 1430 1633 1830 2061 2282
-    2409 2500 2584 2697 2880 3069 3213 3337 3447>;
-  temp_array = <900 850 800 750 700 650 620 600 580 550
-    500 450 420 400 380 350 300 250 200 150
-    120 100 80 50 0 (-50) (-100) (-150) (-200)>;
+  adc_array = <280 391 423 642 673 688 779 799 859 926
+   993 1040 1115 1178 1345 1552 1755 1976 2210 2396
+   2638 2717 2828 2894 2959 2992 3018 3076 3120 3205
+   3296 3412 3523>;
+  temp_array = <900 800 750 650 620 600 580 570 550 530
+   510 490 470 450 400 350 300 250 200 150
+   100 80 50 30 10 0 (-10) (-30) (-50) (-70)
+   (-100) (-150) (-200)>;
   io-channels = <&exynos_adc 6>;
   io-channel-names = "adc-wf-temp";
   io-channel-ranges;
@@ -5907,10 +5912,10 @@ samsung,tmu_sensor_type = <0x2>;
    sec,regulator_boot_on;
    sec,grip_area = <512>;
    sec,bringup = <3>;
-   sec,project_name = "JACKPOT1", "A530";
-   sec,firmware_name = "tsp_sec/y661_a5y18.fw", "tsp_sec/y661_a5y18.fw";
+   sec,project_name = "JACKPOT2", "A730";
+   sec,firmware_name = "tsp_sec/y661_a7y18.fw", "tsp_sec/y661_a7y18.fw";
    sec,tclm_level = <2>;
-   sec,afe_base = <0x0105>;
+   sec,afe_base = <0x0104>;
    status = "okay";
   };
  };
@@ -6004,7 +6009,7 @@ samsung,tmu_sensor_type = <0x2>;
    abov,scl-gpio = <&gpp4 3 0>;
    abov,irq-gpio = <&gpa2 7 0>;
    abov,tkey_en-gpio = <&gpg2 5 0>;
-   abov,firmware_name = "abov/a96t326_a5y18.fw";
+   abov,firmware_name = "abov/a96t326_a7y18.fw";
    abov,firmup_cmd = <0x32>;
    abov,ta-notifier;
    abov,not_support_key;
@@ -6127,6 +6132,7 @@ samsung,tmu_sensor_type = <0x2>;
   #size-cells = <0>;
   pinctrl-names = "default";
   pinctrl-0 = <&key_voldown &key_volup &key_power>;
+
   button@1 {
    label = "gpio-keys: KEY_VOLUMEDOWN";
    interrupts = <6 0 0>;
@@ -6171,10 +6177,6 @@ samsung,tmu_sensor_type = <0x2>;
  dsim_0: dsim@0x14870000 {
   lcd_info = <&s6e3fa7>;
   decon_board = <&decon_board_list>;
- };
-
- s6e3fa7: s6e3fa7_fhd {
-  size = <62 128>;
  };
 
  decon_board_list: decon_board_list {
@@ -6412,7 +6414,7 @@ samsung,tmu_sensor_type = <0x2>;
   };
 
   fimc_is_dvfs {
-# 1155 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi"
+# 1155 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi"
    table0 {
     desc = "default";
 
@@ -6698,7 +6700,7 @@ samsung,tmu_sensor_type = <0x2>;
   };
 
   internal_vc {
-# 1455 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi"
+# 1455 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi"
    vc_list = <1 1 1>;
   };
  };
@@ -6765,7 +6767,7 @@ samsung,tmu_sensor_type = <0x2>;
   pinctrl-1 = <&fimc_is_flash_host>;
   pinctrl-2 = <&fimc_is_flash_is>;
  };
-# 1529 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi"
+# 1529 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi"
  fimc_is_sensor0: fimc_is_sensor@14410000 {
   scenario = <0>;
   id = <0>;
@@ -6864,7 +6866,7 @@ samsung,tmu_sensor_type = <0x2>;
   gpios = <&gpc1 6 0 &gpc1 7 0>;
   status = "okay";
   clock-frequency = <400000>;
-  samsung.tsda-su-fs = <0x36>;
+  samsung.tsda-su-fs = <0x4C>;
 
   pinctrl-names = "on_i2c";
   pinctrl-0 = <&hs_i2c3_bus>;
@@ -7070,7 +7072,7 @@ samsung,tmu_sensor_type = <0x2>;
 
  abox: abox@0x14A50000 {
   status = "okay";
-# 1843 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi"
+# 1843 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi"
   abox_synchronized_ipc: abox_synchronized_ipc {
    compatible = "samsung,abox-synchronized-ipc";
    #sound-dai-cells = <1>;
@@ -7255,6 +7257,13 @@ samsung,tmu_sensor_type = <0x2>;
     sound-dai = <&dummy_audio_codec>;
    };
   };
+ };
+
+ fm@14840000 {
+  num-volume-level = <16>;
+  val-vol-level = <0 11 16 23 32 45 64
+     90 128 181 256 362
+     512 724 1024 1400>;
  };
 
  pinctrl@11CB0000 {
@@ -7452,7 +7461,7 @@ samsung,tmu_sensor_type = <0x2>;
  argos {
   compatible = "samsung,argos";
   #address-cells = <1>;
-# 2246 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi"
+# 2253 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi"
    boot_device@1 {
    net_boost,label="WIFI TX";
    net_boost,node="wlan0";
@@ -7501,7 +7510,7 @@ samsung,tmu_sensor_type = <0x2>;
    net_boost,table_size = <1>;
    net_boost,table= < 0 0 0 0 0 0 0 0 1 0 >;
   };
-# 2308 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_common.dtsi"
+# 2315 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_common.dtsi"
  };
 
  nad_balancer {
@@ -7542,7 +7551,7 @@ samsung,tmu_sensor_type = <0x2>;
             };
  };
 };
-# 14 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_06.dts" 2
+# 14 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_06.dts" 2
 # 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_fingerprint-sensor_00.dtsi" 1
 # 14 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_fingerprint-sensor_00.dtsi"
 / {
@@ -7626,11 +7635,11 @@ samsung,tmu_sensor_type = <0x2>;
   };
  };
 };
-# 15 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_06.dts" 2
-# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_gpio_06.dtsi" 1
-# 10 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_gpio_06.dtsi"
+# 15 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_06.dts" 2
+# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_gpio_06.dtsi" 1
+# 10 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_gpio_06.dtsi"
 # 1 "arch/arm64/boot/dts/exynos/exynos_gpio_config_macros.dtsi" 1
-# 11 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_gpio_06.dtsi" 2
+# 11 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_gpio_06.dtsi" 2
 
 
 &pinctrl_0 {
@@ -7798,7 +7807,7 @@ samsung,tmu_sensor_type = <0x2>;
   gpc2-7 { samsung,pins = "gpc2-7"; samsung,pin-con-pdn = <2>; samsung,pin-pud-pdn = <1>; };
  };
 };
-# 16 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_06.dts" 2
+# 16 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_06.dts" 2
 # 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_mst_02.dtsi" 1
 # 13 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_mst_02.dtsi"
 / {
@@ -7834,9 +7843,9 @@ samsung,tmu_sensor_type = <0x2>;
   };
  };
 };
-# 17 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_06.dts" 2
-# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_svcled.dtsi" 1
-# 12 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_svcled.dtsi"
+# 17 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_06.dts" 2
+# 1 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_svcled.dtsi" 1
+# 12 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_svcled.dtsi"
 / {
  s2mu004_led {
   status = "okay";
@@ -7849,16 +7858,16 @@ samsung,tmu_sensor_type = <0x2>;
   ratio_low = <2 1 3 0>;
  };
 };
-# 18 "arch/arm64/boot/dts/exynos/exynos7885-jackpotlte_eur_open_06.dts" 2
+# 18 "arch/arm64/boot/dts/exynos/exynos7885-jackpot2lte_eur_open_06.dts" 2
 
 / {
- model = "Samsung JACKPOTLTE EUR rev06 board based on EXYNOS7885";
+ model = "Samsung JACKPOT2LTE EUR rev06 board based on EXYNOS7885";
  model_info-chip = <7885>;
  model_info-platform = "android";
  model_info-subtype = "samsung";
  model_info-hw_rev = <6>;
  model_info-hw_rev_end = <6>;
- compatible = "samsung, JACKPOTLTE EUR rev06", "samsung,Universal7885";
+ compatible = "samsung, JACKPOT2LTE EUR rev06", "samsung,Universal7885";
 
 
     spi_4: spi@13980000 {
@@ -7888,7 +7897,7 @@ samsung,tmu_sensor_type = <0x2>;
    ssp,ap_int-gpio = <&gpg1 6 0x01>;
    ssp,rst-gpio = <&gpg3 5 0x01>;
    ssp,boot0-gpio = <&gpg1 3 0x1>;
-   ssp,acc-position = <7>;
+   ssp,acc-position = <6>;
    ssp,mag-position = <5>;
    ssp-sns-combination = <0>;
    ssp,prox-hi_thresh = <55>;
@@ -7896,14 +7905,14 @@ samsung,tmu_sensor_type = <0x2>;
    ssp,prox-detect_hi_thresh = <250>;
    ssp,prox-detect_low_thresh = <130>;
    ssp-ap-rev = <1>;
-   ssp-mag-array = /bits/ 8 <207 82 201 4 218 137 254 197 213
-                                    55 35 84 243 129 255 167 2 43
-                                    230 232 191 252 243 208 9 197 21>;
+   ssp-mag-array = /bits/ 8 <118 84 64 98 6 196 255 46 212
+                                    55 242 196 116 2 255 238 255 177
+                                    193 111 192 254 189 53 11 73 25>;
    ssp-mag-type = <1>;
    ssp-glass-type = <0>;
    ssp-acc-type = <1>;
    ssp-pressure-type = <1>;
-   ssp-project-type = <1>;
+   ssp-project-type = <2>;
 
 
             controller-data {
@@ -7991,5 +8000,9 @@ samsung,tmu_sensor_type = <0x2>;
   pinctrl-0 = <&fimc_is_flash_is>;
   pinctrl-1 = <&fimc_is_flash_host>;
   pinctrl-2 = <&fimc_is_flash_is>;
+ };
+
+ decon_f: decon_f@0x14860000 {
+  /delete-property/ gpio_pcd;
  };
 };
