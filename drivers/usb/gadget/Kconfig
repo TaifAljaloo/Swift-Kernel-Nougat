@@ -583,3 +583,4 @@ source "drivers/usb/gadget/legacy/Kconfig"
 endchoice
 
 endif # USB_GADGET
+

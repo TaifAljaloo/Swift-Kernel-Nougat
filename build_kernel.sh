@@ -30,8 +30,8 @@ export CROSS_COMPILE=$SW_TOOLCHAIN
 # SW_TC=/home/elite/android/toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 CLEAN_SOURCE()
 {
-#	make clean
-#	make mrproper
+	make clean
+	make mrproper
 	rm -r -f $SW_DIR/swift/dtb.img
 }
 BUILD_ZIMAGE()
