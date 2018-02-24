@@ -253,7 +253,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 #ARCH		?= $(SUBARCH)
 #CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
 ARCH            ?= arm64
-CROSS_COMPILE   ?= /home/taif/Desktop/kernel/toolchain/bin/aarch64-linux-android-
+CROSS_COMPILE   ?=/home/taif/kernel/toolchain/UBERTC-aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 # For testing only
 # CROSS_COMPILE	?=/home/elite/android/toolchain/ubertc-aarch64-4.9/bin/aarch64-linux-android-
