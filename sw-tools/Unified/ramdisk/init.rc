@@ -440,7 +440,7 @@ on post-fs
 
     # once everything is setup, no need to modify /
     mount rootfs rootfs / ro remount
-    # mount shared so changes propagate into child namespaces
+    # Mount shared so changes propagate into child namespaces
     mount rootfs rootfs / shared rec
     # Mount default storage into root namespace
     mount none /mnt/runtime/default /storage slave bind rec
@@ -1801,6 +1801,7 @@ on property:ro.debuggable=1
     write /sys/class/android_usb/android0/functions adb
     write /sys/class/android_usb/android0/enable 1
     start adbd
+ group root
 
 # Call Post-init script
 service post-init /sbin/post-init.sh
